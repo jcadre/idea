@@ -29,5 +29,6 @@ public enum Singleton {
         ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("E://aaaa.txt"));
         Singleton singleton = (Singleton)inputStream.readObject();
         System.out.println(Singleton.INSTANCE == singleton);
+        System.out.println("good");
     }
 }
