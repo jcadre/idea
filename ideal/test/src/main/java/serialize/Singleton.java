@@ -14,6 +14,8 @@ public enum Singleton {
 
     private String name;
 
+    private Integer age;
+
     public String getName(){
         return name;
     }
@@ -29,6 +31,7 @@ public enum Singleton {
         ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("E://aaaa.txt"));
         Singleton singleton = (Singleton)inputStream.readObject();
         System.out.println(Singleton.INSTANCE == singleton);
-        System.out.println("good");
+        int a = 0;
+        System.out.println(a);
     }
 }
